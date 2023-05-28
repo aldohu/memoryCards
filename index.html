@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+			integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="app.css"
+		/>
+		<script
+			src="app.js"
+			defer
+		></script>
+		<title>Memory cards</title>
+	</head>
+	<body>
+		<section class="memory-cards-container">
+			<header class="memory-cards-header">
+				<h2>Memory Cards</h2>
+				<button class="btn-add-card">
+					<i class="fas fa-plus fa-xs"> Add New Card </i>
+				</button>
+			</header>
+			<div class="cards">
+				<div class="question-one-placeholder"></div>
+			</div>
+			<div class="cards-commands">
+				<span class="left"><i class="fas fa-arrow-left fa-xs"></i></span>
+				<span>1</span>/<span>1</span>
+				<span class="right"><i class="fas fa-arrow-right fa-xs"></i></span>
+			</div>
+		</section>
+		<section class="add-cards-container hidden">
+			<header class="add-cards-header">
+				<h2>Add New Card</h2>
+				<button class="btn-close">
+					<i class="fas fa-times fa-xs"></i>
+				</button>
+			</header>
+			<div class="card">
+				<h3>Question</h3>
+				<textarea
+					name=""
+					id="question"
+					cols="30"
+					placeholder="Enter question..."
+					rows="10"
+				></textarea>
+				<h3>Answer</h3>
+				<textarea
+					name=""
+					id="answer"
+					cols="30"
+					placeholder="Enter answer..."
+					rows="10"
+				></textarea>
+			</div>
+			<button class="add-card">
+				<i class="fas fa-plus fa-xs"> Add Card </i>
+			</button>
+		</section>
+		<div class="clear">
+			<button class="btn"><i class="fas fa-trash"></i></button>
+		</div>
+	</body>
+</html>
